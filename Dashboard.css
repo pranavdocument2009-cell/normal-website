@@ -1,0 +1,221 @@
+/* Main Container */
+.dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  padding: 20px 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.system-title {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+}
+.header-date {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 14px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #555;
+}
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #d4af37; /* Gold color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+.stat-icon {
+  font-size: 30px;
+}
+.stat-title {
+  margin: 0;
+  color: #888;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.stat-value {
+  margin: 5px 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+.stat-sub {
+  margin: 0;
+  color: #27ae60;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  gap: 20px;
+  flex: 1; /* Takes up remaining space */
+}
+
+/* Recent Bills Table */
+.recent-bills-section {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+.recent-bills-section h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+.bills-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.bills-table th {
+  padding: 12px;
+  background-color: #f8f9fa;
+  color: #666;
+  font-size: 13px;
+  border-bottom: 2px solid #eee;
+}
+.bills-table td {
+  padding: 12px;
+  color: #444;
+  border-bottom: 1px solid #f1f1f1;
+}
+.bill-id {
+  color: #d4af37;
+  font-weight: 600;
+}
+.bill-amount {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Quick Actions */
+.quick-actions-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quick-actions-section h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+.action-btn {
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.2s;
+}
+.action-btn:hover {
+  background: #f9f9f9;
+  border-color: #bbb;
+}
+.primary-btn {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+.primary-btn:hover {
+  background-color: #c5a02e;
+}
+
+/* Bottom Barcode Section */
+.barcode-section {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.barcode-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f4f6f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+.barcode-input-wrapper:focus-within {
+  border-color: #d4af37;
+  background: white;
+}
+.barcode-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.barcode-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  color: #333;
+}
+.jewelry-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  margin-left: 20px;
+}
